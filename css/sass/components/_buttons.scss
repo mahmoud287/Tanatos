@@ -1,0 +1,94 @@
+$color_1: #F4511E;
+$color_2: #fff;
+$background_color_1: #fff;
+$background_color_2: transparent;
+.main_button {
+  padding: 10px 15px;
+  overflow: hidden;
+  .parent {
+    height: 50px;
+    padding-left: 15px;
+    letter-spacing: 4px;
+    box-sizing: content-box;
+    background-color: $background_color_1;
+    border: 2px solid #999;
+    border-radius: 3px;
+    font: bold 15px 'Ubuntu', sans-serif;
+    white-space: normal;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    a {
+      color: $color_1;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
+    .child {
+      border-left: 1px solid #F4511E;
+      padding-left: 20px;
+      box-sizing: content-box;
+      margin-right: 10px;
+      margin-left: 10px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: all 0.4s;
+      i {
+        color: $color_1;
+        transition: all 0.5s ease-in-out;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    &:hover {
+      background-color: $background_color_2;
+      .child {
+        border-left: none;
+        transition: all 0.2s;
+        height: 125%;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      a {
+        color: $color_2;
+      }
+      i {
+        color: $color_2;
+        font-size: 23px;
+      }
+    }
+  }
+}
+//.price {
+//  .main_button {
+//    .parent {
+//      background-color: $background_color_1;
+//      .child {
+//        i {
+//          color: $color_1;
+//        }
+//        border-left: 1px solid #fff;
+//      }
+//      a {
+//        color: $color_2;
+//        text-decoration: none;
+//        font-weight: bold;
+//      }
+//      &:hover {
+//        background-color: $background_color_2;
+//        a {
+//          color: $color_3;
+//        }
+//        .child {
+//          i {
+//            color: $color_3;
+//          }
+//          border: none;
+//        }
+//      }
+//    }
+//  }
+//}

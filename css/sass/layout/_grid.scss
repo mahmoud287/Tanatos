@@ -1,0 +1,28 @@
+* {
+  @include prifxer(box-sizing, border-box, webkit moz)
+}
+
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media #{$minsmall} {
+    width: 750px;
+  }
+  @media #{$minmedium} {
+    width: 970px;
+  }
+  @media #{$minlarge} {
+    width: 1170px;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.text_center {
+  @media #{$maxmobile} {
+    text-align: center;
+  }
+}

@@ -1,0 +1,570 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+.clearfix {
+  clear: both; }
+
+@media (max-width: 767px) {
+  .text_center {
+    text-align: center; } }
+
+h1 {
+  font-size: 30px; }
+
+.main_button {
+  padding: 10px 15px;
+  overflow: hidden; }
+  .main_button .parent {
+    height: 50px;
+    padding-left: 15px;
+    letter-spacing: 4px;
+    box-sizing: content-box;
+    background-color: #fff;
+    border: 2px solid #999;
+    border-radius: 3px;
+    font: bold 15px 'Ubuntu', sans-serif;
+    white-space: normal;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+    .main_button .parent a {
+      color: #F4511E;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'PT Sans Narrow', sans-serif; }
+    .main_button .parent .child {
+      border-left: 1px solid #F4511E;
+      padding-left: 20px;
+      box-sizing: content-box;
+      margin-right: 10px;
+      margin-left: 10px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: all 0.4s; }
+      .main_button .parent .child i {
+        color: #F4511E;
+        transition: all 0.5s ease-in-out;
+        font-size: 20px;
+        font-weight: bold; }
+    .main_button .parent:hover {
+      background-color: transparent; }
+      .main_button .parent:hover .child {
+        border-left: none;
+        transition: all 0.2s;
+        height: 125%;
+        padding-left: 5px;
+        padding-right: 5px; }
+      .main_button .parent:hover a {
+        color: #fff; }
+      .main_button .parent:hover i {
+        color: #fff;
+        font-size: 23px; }
+
+.header {
+  background-image: url("https://mobirise.com/extensions/fitnessamp/workoutmovement/assets/images/background3.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 100px; }
+  .header .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .header .container-fluid {
+    height: 100%; }
+  .header .home {
+    height: inherit;
+    display: flex;
+    align-items: flex-end; }
+    .header .home .logo {
+      margin: 5% 50px; }
+      .header .home .logo h1 {
+        font-size: 100px;
+        letter-spacing: 15px;
+        color: #fff; }
+      .header .home .logo .main_button .parent {
+        background-color: #F34E3A; }
+        .header .home .logo .main_button .parent .child {
+          border-left: 1px solid #fff; }
+          .header .home .logo .main_button .parent .child i {
+            color: #fff; }
+        .header .home .logo .main_button .parent a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold; }
+        .header .home .logo .main_button .parent:hover {
+          background-color: transparent;
+          border-color: #F34E3A; }
+          .header .home .logo .main_button .parent:hover a {
+            color: #F34E3A; }
+          .header .home .logo .main_button .parent:hover .child {
+            border: none; }
+            .header .home .logo .main_button .parent:hover .child i {
+              color: #F34E3A; }
+  @media (max-width: 425px) {
+    .header .home {
+      height: inherit;
+      display: flex;
+      align-items: flex-end; }
+      .header .home .logo {
+        margin-bottom: 100px;
+        text-align: center; }
+        .header .home .logo h1 {
+          font-size: 50px;
+          letter-spacing: 15px;
+          color: #fff; } }
+
+.features {
+  margin-bottom: 100px; }
+  .features .img-card {
+    position: relative; }
+    .features .img-card .line {
+      width: 80%;
+      height: 0;
+      border: 1px dotted #b9b9b9;
+      position: absolute;
+      margin: auto;
+      top: 100px; }
+    .features .img-card .box .img {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border: 2px dotted #b9b9b9;
+      border-radius: 100%;
+      background-size: cover;
+      background-clip: content-box;
+      background-position: center;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 0 0 10px white;
+      margin: 30px auto;
+      z-index: 1;
+      color: #000;
+      font-weight: bold; }
+    .features .img-card .box .text h2 {
+      color: #333;
+      font-weight: normal;
+      letter-spacing: 3px;
+      margin-bottom: 20px; }
+    .features .img-card .box .text p {
+      color: #555; }
+
+.features2 {
+  margin: auto 50px; }
+  .features2 h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 50px; }
+  .features2 p {
+    color: #777; }
+  .features2 h4 {
+    letter-spacing: 0; }
+  .features2 .box {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px; }
+    .features2 .box img {
+      width: 110%;
+      -webkit-transition: all .6s ease;
+      transition: all .6s ease; }
+      .features2 .box img:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); }
+  .features2 .main_button .parent {
+    background-color: transparent; }
+    .features2 .main_button .parent .child {
+      border-left: none; }
+      .features2 .main_button .parent .child i {
+        color: #F4511E; }
+    .features2 .main_button .parent a {
+      color: #F4511E;
+      text-decoration: none;
+      font-weight: bold; }
+    .features2 .main_button .parent:hover {
+      background-color: #F4511E; }
+      .features2 .main_button .parent:hover a {
+        color: #fff; }
+      .features2 .main_button .parent:hover .child {
+        border: none; }
+        .features2 .main_button .parent:hover .child i {
+          color: #fff; }
+
+.brand {
+  background: #F34E3A;
+  padding: 100px 0; }
+  .brand .box {
+    text-align: center; }
+    .brand .box img {
+      width: 120px;
+      height: 100px;
+      margin-bottom: 2rem;
+      color: #fff;
+      filter: brightness(300%); }
+
+.progress-skill {
+  margin-top: 50px; }
+  .progress-skill span {
+    float: right; }
+  .progress-skill h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 50px; }
+  .progress-skill .col1 .progress-bar {
+    background-color: #F34E3A;
+    font-size: 10px;
+    margin-bottom: 20px;
+    height: 10px; }
+  .progress-skill .col2 .progress-bar {
+    background-color: #000;
+    font-size: 10px;
+    margin-bottom: 20px;
+    height: 10px; }
+
+.testimonials {
+  margin-top: 70px;
+  background-image: url("https://mobirise.com/extensions/fitnessamp/workoutmovement/assets/images/background40.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: #fff;
+  position: relative; }
+  .testimonials .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .testimonials .carousel-inner {
+    height: 400px; }
+    .testimonials .carousel-inner p {
+      padding-bottom: 2rem;
+      margin: auto;
+      letter-spacing: 3px;
+      line-height: 1.5; }
+      @media (min-width: 320px) {
+        .testimonials .carousel-inner p {
+          max-width: 300px;
+          font-size: 1rem;
+          font-weight: normal; } }
+      @media (min-width: 426px) {
+        .testimonials .carousel-inner p {
+          max-width: 500px;
+          font-size: 1.5rem; } }
+      @media (min-width: 769px) {
+        .testimonials .carousel-inner p {
+          max-width: 800px;
+          font-size: 2rem;
+          font-weight: 700; } }
+    .testimonials .carousel-inner h4 {
+      letter-spacing: 3px; }
+      @media (min-width: 320px) {
+        .testimonials .carousel-inner h4 {
+          font-size: 0.9rem; } }
+
+@media (min-width: 320px) {
+  .timetable {
+    overflow: scroll; } }
+@media (min-width: 1025px) {
+  .timetable {
+    overflow: hidden; } }
+.timetable h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+  font-size: 40px; }
+.timetable h3 {
+  font-size: 20px; }
+.timetable h4 {
+  font-size: 15px; }
+.timetable table {
+  border-collapse: collapse;
+  border: 0.2px dotted #29282d;
+  border-bottom: 0; }
+.timetable td, .timetable th {
+  border-right: 0.2px dotted #29282d;
+  border-bottom: 0.2px dotted #29282d;
+  text-align: center;
+  margin: auto;
+  vertical-align: middle; }
+
+.cards {
+  background-color: #29282D;
+  margin: 50px auto; }
+  .cards h1 {
+    font-size: 40px;
+    color: #fff;
+    padding: 50px 0 50px 0; }
+  .cards .box .img {
+    width: 100%; }
+    .cards .box .img img {
+      width: inherit; }
+  .cards .text {
+    background-color: #302F33;
+    color: #fff;
+    padding: 30px 20px; }
+    .cards .text span:first-of-type {
+      font-size: 13px;
+      color: #888; }
+    .cards .text h4 {
+      letter-spacing: 4px;
+      margin: 15px auto; }
+    .cards .text P {
+      color: #999; }
+
+.features3 i {
+  color: #585858;
+  margin: 30px auto; }
+.features3 h4 {
+  letter-spacing: 2px;
+  margin-bottom: 30px; }
+.features3 p {
+  color: #777; }
+
+.buttons {
+  background-color: #29282D; }
+  .buttons .box {
+    margin: 70px auto;
+    display: inline-flex;
+    width: 100%; }
+    .buttons .box .box3, .buttons .box .box2, .buttons .box .box1 {
+      text-align: center; }
+    .buttons .box .box1 .parent {
+      background-color: #F34E3A;
+      border: 2px solid #F34E3A; }
+      .buttons .box .box1 .parent .child {
+        border-left: 1px solid #fff; }
+        .buttons .box .box1 .parent .child i {
+          color: #fff; }
+      .buttons .box .box1 .parent a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold; }
+      .buttons .box .box1 .parent:hover {
+        background-color: transparent; }
+        .buttons .box .box1 .parent:hover a {
+          color: #F34E3A; }
+        .buttons .box .box1 .parent:hover .child {
+          border: none; }
+          .buttons .box .box1 .parent:hover .child i {
+            color: #F34E3A; }
+    .buttons .box .box2 .parent {
+      background-color: transparent;
+      border: 2px solid #fff; }
+      .buttons .box .box2 .parent .child {
+        border-left: none; }
+        .buttons .box .box2 .parent .child i {
+          color: #fff; }
+      .buttons .box .box2 .parent a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold; }
+      .buttons .box .box2 .parent:hover {
+        background-color: #fff; }
+        .buttons .box .box2 .parent:hover a {
+          color: #000; }
+        .buttons .box .box2 .parent:hover .child {
+          border: none; }
+          .buttons .box .box2 .parent:hover .child i {
+            color: #000; }
+    .buttons .box .box3 .parent {
+      background-color: #45B87E;
+      border: 2px solid #45B87E; }
+      .buttons .box .box3 .parent .child {
+        border-left: 1px solid #fff; }
+        .buttons .box .box3 .parent .child i {
+          color: #fff; }
+      .buttons .box .box3 .parent a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold; }
+      .buttons .box .box3 .parent:hover {
+        background-color: transparent; }
+        .buttons .box .box3 .parent:hover a {
+          color: #45B87E; }
+        .buttons .box .box3 .parent:hover .child {
+          border: none; }
+          .buttons .box .box3 .parent:hover .child i {
+            color: #45B87E; }
+
+.content1 img, .content2 img {
+  width: 100%;
+  height: 90%; }
+.content1 h1, .content2 h1 {
+  color: #dadada;
+  font-weight: 400;
+  margin-bottom: -35px;
+  font-size: 73px; }
+.content1 h2, .content2 h2 {
+  letter-spacing: 3px; }
+.content1 p, .content2 p {
+  margin-top: 30px;
+  color: #777;
+  font-size: 20px; }
+.content1 .main_button .parent, .content2 .main_button .parent {
+  background-color: #F34E3A;
+  border: 2px solid #F34E3A; }
+  .content1 .main_button .parent .child, .content2 .main_button .parent .child {
+    border-left: 1px solid #fff; }
+    .content1 .main_button .parent .child i, .content2 .main_button .parent .child i {
+      color: #fff; }
+  .content1 .main_button .parent a, .content2 .main_button .parent a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; }
+  .content1 .main_button .parent:hover, .content2 .main_button .parent:hover {
+    background-color: transparent; }
+    .content1 .main_button .parent:hover a, .content2 .main_button .parent:hover a {
+      color: #F34E3A; }
+    .content1 .main_button .parent:hover .child, .content2 .main_button .parent:hover .child {
+      border: none; }
+      .content1 .main_button .parent:hover .child i, .content2 .main_button .parent:hover .child i {
+        color: #F34E3A; }
+.content1 .vcenter, .content2 .vcenter {
+  margin: auto;
+  max-width: 500px; }
+
+.content2 {
+  background-color: #29282D;
+  padding: 70px 0 30px 0; }
+  .content2 h1 {
+    color: #585858; }
+  .content2 h2 {
+    color: #fff; }
+
+.contact {
+  margin-top: 70px; }
+  .contact h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
+  .contact p {
+    color: #777;
+    margin-bottom: 40px; }
+  .contact .main_button .parent {
+    background-color: #F34E3A;
+    border: 2px solid #F34E3A; }
+    .contact .main_button .parent .child {
+      border-left: 1px solid #fff; }
+      .contact .main_button .parent .child i {
+        color: #fff; }
+    .contact .main_button .parent a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold; }
+    .contact .main_button .parent:hover {
+      background-color: transparent; }
+      .contact .main_button .parent:hover a {
+        color: #F34E3A; }
+      .contact .main_button .parent:hover .child {
+        border: none; }
+        .contact .main_button .parent:hover .child i {
+          color: #F34E3A; }
+  .contact input[type="text"], .contact input[type="tel"], .contact input[type="email"], .contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #F3F4F5;
+    border: 0.5px solid #b9b9b9; }
+  .contact textarea {
+    height: 140px; }
+
+.section {
+  overflow: hidden;
+  margin-top: 70px; }
+  .section .box {
+    position: relative; }
+    .section .box:hover .overlay {
+      opacity: 1; }
+    .section .box .overlay {
+      transition: all .5s ease;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      opacity: 0; }
+  .section img {
+    height: inherit;
+    width: inherit; }
+
+.map {
+  margin-top: 70px; }
+
+ul, ol {
+  margin: 0;
+  list-style: none;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Staatliches', cursive; }
+
+p {
+  font-family: 'Bree Serif', serif; }
+
+span {
+  font-family: 'Merienda', cursive; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100; }
+  .navbar .nav-link {
+    font-size: 23px; }
+  .navbar .main_button .parent {
+    background-color: #F34E3A; }
+    .navbar .main_button .parent .child {
+      border-left: 1px solid #fff; }
+      .navbar .main_button .parent .child i {
+        color: #fff; }
+    .navbar .main_button .parent a {
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold; }
+    .navbar .main_button .parent:hover {
+      background-color: transparent;
+      border-color: #F34E3A; }
+      .navbar .main_button .parent:hover a {
+        color: #F34E3A; }
+      .navbar .main_button .parent:hover .child {
+        border-color: transparent; }
+        .navbar .main_button .parent:hover .child i {
+          color: #F34E3A; }
+
+/*# sourceMappingURL=homepage.css.map */
